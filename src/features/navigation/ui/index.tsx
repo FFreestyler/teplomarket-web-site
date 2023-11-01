@@ -1,14 +1,16 @@
-import {
-  AppBar,
-  Box,
-  Container,
-  MenuItem,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { Container, Divider, MenuItem, Typography } from "@mui/material";
 import React from "react";
+import Image from "next/image";
 import { Logo } from "./Logo";
-import { StyledAppBar } from "./styles";
+import {
+  ContactBox,
+  NavigationBox,
+  NumberBox,
+  SocialBox,
+  SocialImageBox,
+  StyledAppBar,
+  StyledToolbar,
+} from "./styles";
 
 const pages = ["Главная", "Ассортимент", "Контакты", "О нас"];
 
@@ -16,16 +18,52 @@ export const Navigation = () => {
   return (
     <StyledAppBar>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Logo></Logo>
-          <Box sx={{ display: "flex" }}>
+        <StyledToolbar disableGutters>
+          <NavigationBox>
+            <Logo />
             {pages.map((page) => (
               <MenuItem key={page}>
-                <Typography textAlign={"center"}>{page}</Typography>
+                <Typography
+                  textAlign={"center"}
+                  fontWeight={"bold"}
+                  fontSize={"18px"}
+                >
+                  {page}
+                </Typography>
               </MenuItem>
             ))}
-          </Box>
-        </Toolbar>
+          </NavigationBox>
+          <ContactBox>
+            <NumberBox>
+              <Typography fontWeight={"bold"} fontSize={"18px"}>
+                +7 (777) 28-04-200
+              </Typography>
+              <Typography fontWeight={"bold"} fontSize={"18px"}>
+                +7 (7232) 56-65-15
+              </Typography>
+            </NumberBox>
+            <Divider orientation="vertical" variant="middle" flexItem />
+            <SocialBox>
+              <Typography fontWeight={"bold"} fontSize={"18px"}>
+                teploobmen78@mail.ru
+              </Typography>
+              <SocialImageBox>
+                <Image
+                  src="/whatsapp.svg"
+                  width={32}
+                  height={32}
+                  alt="WhatsApp"
+                ></Image>
+                <Image
+                  src="/instagram.svg"
+                  width={32}
+                  height={32}
+                  alt="Instagram"
+                ></Image>
+              </SocialImageBox>
+            </SocialBox>
+          </ContactBox>
+        </StyledToolbar>
       </Container>
     </StyledAppBar>
   );
