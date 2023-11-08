@@ -1,17 +1,17 @@
 import React from "react";
 import {
-  ContactBox,
   DividerBox,
   NumberBox,
   SocialBox,
   SocialImageBox,
+  StyledContactBox,
 } from "./styles";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 
-export const TContactBox = () => {
+export const ContactBox = () => {
   return (
-    <ContactBox>
+    <StyledContactBox>
       <NumberBox>
         <Typography fontWeight={"bold"} fontSize={"18px"}>
           +7 (777) 28-04-200
@@ -40,6 +40,6 @@ export const TContactBox = () => {
           ></Image>
         </SocialImageBox>
       </SocialBox>
-    </ContactBox>
+    </StyledContactBox>
   );
 };
