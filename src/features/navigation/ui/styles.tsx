@@ -1,4 +1,4 @@
-import { AppBar, Box, Toolbar, styled } from "@mui/material";
+import { AppBar, Box, Divider, Toolbar, styled } from "@mui/material";
 
 export const StyledAppBar = styled(AppBar)`
   display: flex;
@@ -34,6 +34,9 @@ export const NumberBox = styled(Box)`
   flex-direction: column;
   align-items: center;
   color: black;
+  ${(props) => props.theme.breakpoints.down("lg")} {
+    display: none;
+  }
 `;
 
 export const SocialBox = styled(Box)`
@@ -41,6 +44,15 @@ export const SocialBox = styled(Box)`
   flex-direction: column;
   align-items: start;
   color: black;
+  ${(props) => props.theme.breakpoints.down("lg")} {
+    display: none;
+  }
+`;
+
+export const DividerBox = styled(Divider)`
+  ${(props) => props.theme.breakpoints.down("lg")} {
+    display: none;
+  }
 `;
 
 export const SocialImageBox = styled(Box)`
