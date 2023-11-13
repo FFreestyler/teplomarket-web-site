@@ -2,13 +2,13 @@ import { Container, MenuItem, Typography } from "@mui/material";
 import React from "react";
 import { Logo } from "./Logo";
 import { NavigationBox, StyledAppBar, StyledToolbar } from "./styles";
-import { TContactBox } from "./TContactBox";
+import { ContactBox } from "./ContactBox";
 
 const pages = ["Главная", "Ассортимент", "Контакты", "О нас"];
 
 export const Navigation = () => {
   return (
-    <StyledAppBar>
+    <StyledAppBar position="relative">
       <Container maxWidth="xl">
         <StyledToolbar disableGutters>
           <NavigationBox>
@@ -25,7 +25,7 @@ export const Navigation = () => {
               </MenuItem>
             ))}
           </NavigationBox>
-          <TContactBox />
+          <ContactBox />
         </StyledToolbar>
       </Container>
     </StyledAppBar>

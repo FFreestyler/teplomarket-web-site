@@ -5,9 +5,9 @@ export const StyledAppBar = styled(AppBar)`
   flex-direction: row;
   height: 120px;
   box-shadow: none;
-  margin-bottom: 1rem;
   background: #fff;
   box-shadow: 0px 5px 5px gray;
+  margin-bottom: 1rem;
 `;
 
 export const StyledToolbar = styled(Toolbar)`
@@ -16,7 +16,7 @@ export const StyledToolbar = styled(Toolbar)`
   align-items: center;
 `;
 
-export const ContactBox = styled(Box)`
+export const StyledContactBox = styled(Box)`
   height: 80%;
   gap: 1rem;
   display: flex;
