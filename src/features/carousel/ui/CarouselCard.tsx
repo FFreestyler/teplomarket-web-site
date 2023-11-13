@@ -1,16 +1,31 @@
 import { Box, Card, CardMedia, Typography } from "@mui/material";
 import React from "react";
 import { StyledCheckBoxGroup } from "./StyledCheckBoxGroup";
-import { BackCallButton, StartDivider, StyledCardContent } from "./style";
+import {
+  BackCallButton,
+  StartDivider,
+  StyledCard,
+  StyledCardContent,
+  StyledCarousel,
+} from "./style";
+import Carousel from "react-material-ui-carousel";
+import Image from "next/image";
+import { Height } from "@mui/icons-material";
+
+const items = [
+  {
+    id: 1,
+    image: "carousel1.png",
+  },
+  {
+    id: 2,
+    image: "logo.png",
+  },
+];
 
 export const CarouselCard = () => {
   return (
-    <Card
-      sx={{
-        display: "flex",
-        flexDirection: "row",
-      }}
-    >
+    <StyledCard>
       <StyledCardContent>
         <Box sx={{ display: "flex", gap: "1rem", alignItems: "center" }}>
           <StartDivider orientation="vertical" flexItem />
@@ -23,11 +38,16 @@ export const CarouselCard = () => {
           Заказать обратный звонок
         </BackCallButton>
       </StyledCardContent>
-      <CardMedia
-        component="img"
-        sx={{ width: 740, height: 450 }}
-        image="main-01.jpg"
-      />
-    </Card>
+      <StyledCarousel animation="slide" indicators={false}>
+        {items.map((item) => (
+          <CardMedia
+            key={item.id}
+            component="img"
+            sx={{ width: 740, height: 450 }}
+            image={item.image}
+          />
+        ))}
+      </StyledCarousel>
+    </StyledCard>
   );
 };

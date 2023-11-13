@@ -1,10 +1,5 @@
-import {
-  Button,
-  CardContent,
-  Divider,
-  Typography,
-  styled,
-} from "@mui/material";
+import { Button, Card, CardContent, Divider, styled } from "@mui/material";
+import Carousel from "react-material-ui-carousel";
 
 export const StyledCardContent = styled(CardContent)`
   display: flex;
@@ -29,4 +24,19 @@ export const StartDivider = styled(Divider)`
   height: 50px;
   background-color: #fc142c;
   margin-top: 0.5rem;
+`;
+
+export const StyledCard = styled(Card)`
+  display: flex;
+  flex-direction: row;
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    flex-direction: column-reverse;
+  }
+`;
+
+export const StyledCarousel = styled(Carousel)`
+  width: 80%;
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    width: 100%;
+  }
 `;
