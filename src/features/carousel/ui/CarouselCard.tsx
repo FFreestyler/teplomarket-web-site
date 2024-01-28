@@ -8,9 +8,6 @@ import {
   StyledCardContent,
   StyledCarousel,
 } from "./style";
-import Carousel from "react-material-ui-carousel";
-import Image from "next/image";
-import { Height } from "@mui/icons-material";
 
 const items = [
   {
@@ -43,7 +40,7 @@ export const CarouselCard = () => {
           <CardMedia
             key={item.id}
             component="img"
-            sx={{ width: 740, height: 450 }}
+            sx={{ width: "100%", height: 450, objectFit: "contain" }}
             image={item.image}
           />
         ))}

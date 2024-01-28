@@ -1,7 +1,12 @@
 import { Container, MenuItem, Typography } from "@mui/material";
 import React from "react";
 import { Logo } from "./Logo";
-import { NavigationBox, StyledAppBar, StyledToolbar } from "./styles";
+import {
+  NavigationBox,
+  StyledAppBar,
+  StyledMenuItem,
+  StyledToolbar,
+} from "./styles";
 import { ContactBox } from "./ContactBox";
 
 const pages = ["Главная", "Ассортимент", "Контакты", "О нас"];
@@ -14,7 +19,7 @@ export const Navigation = () => {
           <NavigationBox>
             <Logo />
             {pages.map((page) => (
-              <MenuItem key={page}>
+              <StyledMenuItem key={page}>
                 <Typography
                   textAlign={"center"}
                   fontWeight={"bold"}
@@ -22,7 +27,7 @@ export const Navigation = () => {
                 >
                   {page}
                 </Typography>
-              </MenuItem>
+              </StyledMenuItem>
             ))}
           </NavigationBox>
           <ContactBox />
