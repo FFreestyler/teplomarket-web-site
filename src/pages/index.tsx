@@ -6,7 +6,7 @@ import { About } from "@/features/about/ui/About";
 import { Assortment } from "@/features/assortment/ui";
 import { MapFooter } from "@/features/map/ui/MapFooter";
 import { Footer } from "@/features/footer/ui/Footer";
-import { StyledContainer } from "./styles";
+import { StyledContainer } from "../styles";
 
 export default function Home() {
   return (
