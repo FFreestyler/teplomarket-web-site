@@ -1,4 +1,4 @@
-import { AppBar, Box, Divider, Toolbar, styled } from "@mui/material";
+import { AppBar, Box, Divider, MenuItem, Toolbar, styled } from "@mui/material";
 
 export const StyledAppBar = styled(AppBar)`
   display: flex;
@@ -58,4 +58,10 @@ export const DividerBox = styled(Divider)`
 export const SocialImageBox = styled(Box)`
   display: flex;
   justify-content: flex-start;
+`;
+
+export const StyledMenuItem = styled(MenuItem)`
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    display: none;
+  }
 `;
