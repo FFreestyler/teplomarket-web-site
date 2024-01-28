@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { StartDivider, StyledContainer } from "@/features/style";
+import { StartDivider, StyledContainer } from "@/style";
 import { CardBox, StyledTypography } from "./style";
 import { TextWithLogo } from "./TextWithLogo";
 

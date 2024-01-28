@@ -1,20 +1,20 @@
-import { Navigation } from "@/features/navigation/ui/Navigation";
+import { Navigation } from "@/navigation/Navigation";
 import "../app/global.css";
-import { Carousel } from "@/features/carousel/ui/Carousel";
+import { Carousel } from "@/carousel/Carousel";
 import { Container } from "@mui/material";
-import { About } from "@/features/about/ui/About";
-import { Assortment } from "@/features/assortment/ui";
-import { MapFooter } from "@/features/map/ui/MapFooter";
-import { Footer } from "@/features/footer/ui/Footer";
-import { StyledContainer } from "../styles";
+import { About } from "@/about/About";
+import { Assortment } from "@/assortment";
+import { MapFooter } from "@/map/MapFooter";
+import { Footer } from "@/footer/Footer";
+import { StyledContainerHome } from "./style";
 
 export default function Home() {
   return (
     <>
       <Navigation />
-      <StyledContainer>
+      <StyledContainerHome>
         <Carousel />
-      </StyledContainer>
+      </StyledContainerHome>
       <Container
         maxWidth={false}
         disableGutters
