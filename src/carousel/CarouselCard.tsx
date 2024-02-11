@@ -8,14 +8,17 @@ import {
   StyledCarousel,
 } from "./style";
 
+import logo from "../assets/logo.png";
+import carousel1 from "../assets/carousel1.png";
+
 const items = [
   {
     id: 1,
-    image: "carousel1.png",
+    image: carousel1,
   },
   {
     id: 2,
-    image: "logo.png",
+    image: logo,
   },
 ];
 

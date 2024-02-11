@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { StyledTypography, TextBox, TitleBox, TitleTypography } from "./style";
+import minilogo from "../assets/minilogo.png";
 
 type TextProps = {
   title: string;
@@ -12,7 +13,7 @@ export const TextWithLogo = (props: TextProps) => {
       <TitleBox>
         <Box
           component={"img"}
-          src="./minilogo.png"
+          src={minilogo}
           sx={{ width: "8%", height: "auto" }}
         />
         <TitleTypography>{props.title}</TitleTypography>
