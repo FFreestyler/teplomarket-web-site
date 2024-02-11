@@ -1,4 +1,3 @@
-import React from "react";
 import { SocialBox, SocialImageBox } from "./styles";
 import { Typography } from "@mui/material";
 

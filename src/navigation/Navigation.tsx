@@ -1,5 +1,4 @@
-import { Container, MenuItem, Typography } from "@mui/material";
-import React from "react";
+import { Container, Typography } from "@mui/material";
 import { Logo } from "./Logo";
 import {
   NavigationBox,

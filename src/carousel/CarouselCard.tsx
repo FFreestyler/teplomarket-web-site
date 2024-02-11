@@ -1,5 +1,4 @@
-import { Box, Card, CardMedia, Typography } from "@mui/material";
-import React from "react";
+import { Box, CardMedia, Typography } from "@mui/material";
 import { StyledCheckBoxGroup } from "./StyledCheckBoxGroup";
 import {
   BackCallButton,

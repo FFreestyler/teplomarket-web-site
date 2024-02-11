@@ -1,5 +1,4 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
+import { Box } from "@mui/material";
 import { StyledTypography, TextBox, TitleBox, TitleTypography } from "./style";
 
 type TextProps = {

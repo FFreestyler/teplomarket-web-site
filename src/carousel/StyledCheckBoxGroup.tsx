@@ -1,11 +1,4 @@
-import {
-  Box,
-  Checkbox,
-  FormControlLabel,
-  Typography,
-  styled,
-} from "@mui/material";
-import React from "react";
+import { Box, Typography, styled } from "@mui/material";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 
 const StyledLabelBox = styled(Box)`

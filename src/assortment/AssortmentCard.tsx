@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import { AssortmentBox } from "./style";
 import { AssortmentImageBox } from "./AssortmentImageBox";
 import { StartDivider, StyledContainer } from "../style";

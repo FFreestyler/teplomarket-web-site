@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
-import React from "react";
 
 export const MapFooter = () => {
   return (

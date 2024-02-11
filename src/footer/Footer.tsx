@@ -1,4 +1,3 @@
-import React from "react";
 import { DividerBox, StyledContainer } from "./styles";
 import { ContactBox } from "./ContactBox";
 import { SocialWebBox } from "./SocialWebBox";

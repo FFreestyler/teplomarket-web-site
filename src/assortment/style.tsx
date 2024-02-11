@@ -1,4 +1,4 @@
-import { Box, Container, Divider, styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 
 export const PictureBox = styled(Box)`
   width: 250px;

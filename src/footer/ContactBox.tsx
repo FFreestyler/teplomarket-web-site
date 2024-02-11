@@ -1,4 +1,3 @@
-import React from "react";
 import { NumberBox, StyledContactBox } from "./styles";
 import { Typography } from "@mui/material";
 

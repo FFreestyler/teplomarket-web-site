@@ -1,4 +1,3 @@
-import React from "react";
 import { PictureBox } from "./style";
 import { BoxProps } from "@mui/material";
 
