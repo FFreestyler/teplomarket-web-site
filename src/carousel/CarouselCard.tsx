@@ -33,9 +33,9 @@ export const CarouselCard = () => {
           </Typography>
         </Box>
         <StyledCheckBoxGroup />
-        <BackCallButton variant="contained">
+        {/* <BackCallButton variant="contained">
           Заказать обратный звонок
-        </BackCallButton>
+        </BackCallButton> */}
       </StyledCardContent>
       <StyledCarousel animation="slide" indicators={false}>
         {items.map((item) => (
